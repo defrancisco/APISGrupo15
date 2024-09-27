@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Contraseña</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="account-section"></div>
+        <h2>Mi Cuenta</h2>
+        <nav>
+            <ul>
+                <li><button type="button">Perfil</button></li>
+                <li><button type="button">Autenticación</button></li>
+                <li><button type="button" class="active">My Wishlist</button></li>
+                <li><button type="button">Medios de Pago</button></li>
+            </ul>
+        </nav>
+        <button type="button" class="logout-button">Salir</button>
+    </div>
+    <div class="payment-method-section"></div>
+        <h2>Métodos de Pago</h2>
+        <form action="#" method="POST">
+            <label for="card-number">Número de Tarjeta</label>
+            <input type="text" id="card-number" placeholder="Ingrese los números" required>
+
+            <label for="cardholder-name">Nombre del Titular (como aparece en la tarjeta)</label>
+            <input type="text" id="cardholder-name" placeholder="Nombre" required>
+
+            <div class="expiry-security">
+                <div class="expiry">
+                    <label for="expiry-date">Fecha de vencimiento</label>
+                    <input type="text" id="expiry-date" placeholder="mm/yy" required>
+                </div>
+
+                <div class="security-code">
+                    <label for="security-code">Código de Seguridad</label>
+                    <input type="password" id="security-code" placeholder="***" required>
+                </div>
+            </div>
+
+            <button type="submit" class="update-button">Actualizar datos</button>
+        </form>
+    </div>
+</main>
+
+    <footer>
+        <p>&copy; Nintendo 2024</p>
+        <ul>
+            <li><a href="#">Padres y control parental</a></li>
+            <li><a href="#">Información de la empresa</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

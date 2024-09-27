@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificar Identidad</title>
+    <title>Cambio de Contraseña</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="#">Catálogo</a></li>
-                <li><a href="#">Wishlist</a></li>
-                <li><a href="#">Consolas</a></li>
                 <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Inicio</a></li>
                 <li><a href="#">Perfil</a></li>
-                <li><a href="#">Ayuda</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="account-type-selection">
-            <h2>¿Qué tipo de cuenta desea registrar?</h2>
-            <div class="button-group">
-                <button type="button" class="personal-account">⭐ Cuenta Personal</button>
-                <button type="button" class="business-account">⭐ Cuenta Empresarial</button>
-            </div>
-            <p>O si ya tiene cuenta</p>
-            <button type="button" class="login-button">⭐ Iniciar Sesión</button>
-        </div>
+        <section>
+            <h1>Cambiar Contraseña</h1>
+            <form action="#">
+                
+                <label for="nueva_password">Nueva Contraseña:</label>
+                <input type="password" id="nueva_password" name="nueva_password"><br>
+                
+                <label for="repetir_nueva_password">Repetir Nueva Contraseña:</label>
+                <input type="password" id="repetir_nueva_password" name="repetir_nueva_password"><br>
+                
+                <button type="submit">Confirmar Contraseña</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy; Nintendo 2024</p>
