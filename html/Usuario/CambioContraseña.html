@@ -1,11 +1,12 @@
-<!Doctype html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Empresa</title>
+    <title>Cambio de Contraseña</title>
 </head>
 <body>
-    <header></header>
+    <header>
         <nav>
             <ul>
                 <li><a href="#">Catálogo</a></li>
@@ -15,21 +16,20 @@
             </ul>
         </nav>
     </header>
-    
     <main>
         <section>
-            <h1>Registro de Usuario</h1>
+            <h1>Cambiar Contraseña</h1>
             <form action="#">
-                <label for="mail">Mail Empresarial:</label>
-                <input type="email" id="mail" name="mail"><br>
+                <label for="password_actual">Contraseña Actual:</label>
+                <input type="password" id="password_actual" name="password_actual"><br>
                 
-                <label for="nombre_usuario">Nombre de Usuario:</label>
-                <input type="text" id="nombre_usuario" name="nombre_usuario"><br>
+                <label for="nueva_password">Nueva Contraseña:</label>
+                <input type="password" id="nueva_password" name="nueva_password"><br>
                 
-                <label for="contrasena">Contraseña:</label>
-                <input type="password" id="contrasena" name="contrasena"><br>
+                <label for="repetir_nueva_password">Repetir Nueva Contraseña:</label>
+                <input type="password" id="repetir_nueva_password" name="repetir_nueva_password"><br>
                 
-                <button type="submit">Registrarse</button>
+                <button type="submit">Confirmar Contraseña</button>
             </form>
         </section>
     </main>
@@ -43,3 +43,4 @@
         </ul>
     </footer>
 </body>
+</html>
