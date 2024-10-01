@@ -1,0 +1,5 @@
+Tengo tres tipos de header
+
++ el principal, sin estar registrado
++ el de usuario, estando registrado
++ el de empresa, estando registrado
