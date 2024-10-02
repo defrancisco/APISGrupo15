@@ -1,9 +1,11 @@
-<!Doctype html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuario</title>
     <!--CSS-->
+    <link rel="stylesheet" href="../../css/registroUsuario.css">
     <link rel="stylesheet" href="../../css/headeryfooter.css">
 </head>
 <body>
@@ -31,31 +33,24 @@
     </header>
 
     <main>
-        <section>
-            <h1>Registro de Usuario</h1>
-            <form action="#">
-                <label for="mail">Mail:</label>
-                <input type="email" id="mail" name="mail"><br>
-                
-                <label for="nombre_usuario">Nombre:</label>
-                <input type="text" id="nombre_usuario" name="nombre_usuario"><br>
-                
-                <label for="apellido_usuario">Apellido:</label>
-                <input type="text" id="apellido_usuario" name="apellido_usuario"><br>
-                
-                <label for="fecha_de_nacimiento">Fecha de Nacimiento: </label>
-                <input type="date" id="fecha_de_nacimiento" name="fecha_de_nacimiento"><br>
-                
-
-                <label for="contrasena">Contraseña:</label>
-                <input type="password" id="contrasena" name="contrasena"><br>
-                
-                <label for="contrasena">Repetir Contraseña:</label>
-                <input type="password" id="contrasena" name="contrasena"><br>
-                
-                <button type="submit">Registrarse</button>
+        <div class="registration-form">
+            <h2>Registro de Usuario</h2>
+            <form>
+                <div class="form-group">
+                    <label for="mail">Mail Empresarial</label>
+                    <input type="email" id="mail" name="mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre de Usuario</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+                <button type="submit" class="submit-btn">Registrarse</button>
             </form>
-        </section>
+        </div>
     </main>
 
    <!-- FOOTER -->
