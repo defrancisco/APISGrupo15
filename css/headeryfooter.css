@@ -5,18 +5,35 @@ body {
     padding: 0;
     background-color: #fff;
     color: #000;
+    flex-direction: column;
+    
 }
 
 /* Header Template */
 header {
     background-color: #E60012; /* Rojo de Nintendo */
     color: #fff;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
+}
+
+header .header-container
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container-left {
+    display: flex;
+    align-items: center;
 }
 
 header .logo img {
@@ -41,8 +58,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 5px;
+}
+
+.auth-buttons{
+    display: flex;
+    gap: 10px;
 }
 
 .auth-buttons button {
@@ -74,6 +96,45 @@ main h1 {
     text-align: center;
     color: #000;
 }
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+.button-group button{
+    background-color: #E60012;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.login{
+    display:flex;
+    flex-direction: column;
+}
+
+.login-button{
+    background-color: #636363;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.button-group button:hover, .login-button:hover {
+    background-color: #c50010;
+}
+
 
 /* Footer Template */
 footer {
@@ -139,4 +200,10 @@ footer ul li a:hover {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+
+
+button{
+    font-weight: bold;
 }
