@@ -6,6 +6,7 @@
     <title>Verificar Identidad</title>
     <!---CSS-->
     <link rel="stylesheet" href="../../../css/headeryfooter.css">
+    <link rel="stylesheet" href="../../../css/verificacionID.css">
 </head>
 <body>
     <header>
@@ -31,16 +32,20 @@
         </div>
     </header>
     <main>
-        <section>
-            <h1>Verificar Identidad</h1>
-            <form action="#">
-                <label for="codigo">Ingrese el código de 6 dígitos:</label>
-                <input type="text" id="codigo" name="codigo"><br>
-                
-                <button type="submit">Confirmar</button>
-                <button type="button">Reenviar Código</button>
-            </form>
-        </section>
+        <h1>Verifique su Identidad</h1>
+        <p style="text-align: center;">Ingrese el código de 6 dígitos</p>
+        <div class="code-input">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+        </div>
+        <div class="buttons">
+            <button class="confirm">Confirmar</button>
+            <button class="resend">Reenviar Código</button>
+        </div>
     </main>
 
 
