@@ -13,16 +13,16 @@
     <header>
         <div class="header-container">
             <div class="container-left">
-                <a href="#" class="logo"><img src="../../imagenes/logo.png" alt="Nintendo Logo"></a>
+                <a href="../../PrePágina.html" class="logo"><img src="../../imagenes/logo.png" alt="Nintendo Logo"></a>
                 <nav>
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Catálogo</a></li>
-                        <li><a href="#">Wishlist</a></li>
-                        <li><a href="#">Consolas</a></li>
-                        <li><a href="#">Quienes somos</a></li>
-                        <li><a href="#">Perfil</a></li>
-                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="../../PrePágina.html">Inicio</a></li>
+                        <li><a href="Catálogo/Catalogo.html">Catálogo</a></li>
+                        <li><a href="InicioSesion.html">Wishlist</a></li>
+                        <li><a href="extras/Consolas.html">Consolas</a></li>
+                        <li><a href="extras/QuienesSomos.html">Quienes somos</a></li>
+                        <li><a href="InicioSesion.html">Perfil</a></li>
+                        <li><a href="extras/Ayuda.html">Ayuda</a></li>
                     </ul>
                 </nav>
             </div>
@@ -150,6 +150,30 @@
             </ul>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtener el hash de la URL
+            const sectionId = window.location.hash.substring(1); // Remueve el '#'
+            
+            // Si existe un hash, mostramos la sección correspondiente
+            if (sectionId) {
+                showSection(sectionId);
+            }
+        });
+        
+        function showSection(section) {
+            // Ocultar todas las secciones
+            document.querySelectorAll('.section').forEach(function(sec) {
+                sec.style.display = 'none';
+            });
+            
+            // Mostrar la sección solicitada
+            document.getElementById(section).style.display = 'block';
+        }
+        </script>
+        
+        
+    
     <script src="../../../js/userTab.js"></script>
 </body>
 </html>
