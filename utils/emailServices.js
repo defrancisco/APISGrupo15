@@ -1,11 +1,13 @@
 import nodemailer from 'nodemailer';
+const EMAIL = process.env.EMAIL;
+const PASS = process.env.PASS;
 
 const SMTP_CONFIG = {
   host: 'smtp.gmail.com',
   port: 587,
   auth: {
-    user: 'nintendoapi@gmail.com',
-    pass: 'nintendoAPI123'
+    user: EMAIL,
+    pass: PASS,
   }
 };
 
