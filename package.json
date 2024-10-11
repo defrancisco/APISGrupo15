@@ -1,14 +1,14 @@
 {
   "name": "proyecto",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Delfina Francisco, Ignacio Opatich, Antonio Wu",
   "license": "ISC",
-  "description": "",
+  "description": "API nintendo grupo-15",
   "dependencies": {
     "express": "^4.21.1",
     "mongodb": "^6.9.0",
