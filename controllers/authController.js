@@ -1,4 +1,5 @@
 import { sendRecoveryEmail } from '../utils/emailServices.js';
+require('dotenv').config();
 
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
@@ -122,7 +123,6 @@ const changePassword = async (req, res) => { //solo si esta bien el codigo de ve
 module.exports = {
   register,
   login,
-  changePassword,
   recoverPassword,
   verifyCode,
   changePassword,

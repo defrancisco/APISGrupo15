@@ -6,4 +6,4 @@ const RecoveryCodeSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now, expires: '10m' },
 });
 
-export default mongoose.model('RecoveryCode', RecoveryCodeSchema);
+module.exports = mongoose.model('RecoveryCode', RecoveryCodeSchema);

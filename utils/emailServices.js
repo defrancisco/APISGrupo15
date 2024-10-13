@@ -1,6 +1,9 @@
-import nodemailer from 'nodemailer';
+require('dotenv').config();
+
+const nodemailer = require('nodemailer');
 const EMAIL = process.env.EMAIL;
 const PASS = process.env.PASS;
+
 
 const SMTP_CONFIG = {
   host: 'smtp.gmail.com',
